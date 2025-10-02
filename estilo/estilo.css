@@ -1,2 +1,20 @@
 /* Sergio Seijo Martinez, UO300084*/
 /*Estilos generales del proyecto MotoGP-Desktop*/
+header {
+    background-color: black;
+    color: #fff;
+
+}
+
+body {
+    font-family: Calibri, sans-serif;
+}
+
+.active {
+    color: red;
+    /*Se ha chequeado que funcione correctamente*/
+}
+
+body>p:first-child {
+    color: green;
+}
