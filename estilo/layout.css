@@ -1,0 +1,42 @@
+/* Sergio Seijo Martinez, UO300084*/
+/*Layout general del proyecto MotoGP-Desktop*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+header nav a {
+    display: flex;
+    padding: 1rem;
+}
+
+@media (min-width: 320px) and (max-width: 799px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header+p {
+        display: none;
+    }
+
+    video,
+    audio {
+        width: 100%;
+        height: auto;
+    }
+
+}

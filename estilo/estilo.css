@@ -15,6 +15,18 @@ body {
     /*Se ha chequeado que funcione correctamente*/
 }
 
-body>p:first-child {
-    color: green;
+header+p {
+    font-size: 1.2rem;
+
+}
+
+header+p strong {
+    font-weight: bold;
+}
+
+
+header a {
+    text-decoration-line: none;
+    color: #fff;
+    font-weight: 500;
 }
