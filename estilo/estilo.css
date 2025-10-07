@@ -28,5 +28,6 @@ header+p strong {
 header a {
     text-decoration-line: none;
     color: #fff;
+    /*Se ha chequeado que funcione correctamente*/
     font-weight: 500;
 }
