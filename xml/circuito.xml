@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuito SYSTEM "circuito.dtd">
+
+<circuito>
+    <nombre>Jerez-Angel Nieto</nombre>
+    <longitud uds="Kilometros">4,42</longitud>
+    <anchura uds="metros">11</anchura>
+    <fecha>27 abril</fecha>
+    <hora>14:00</hora>
+    <numero-vueltas>25</numero-vueltas>
+    <localidad>Jerez</localidad>
+    <pais>España</pais>
+    <patrocinador>Estrella Galicia 0.0</patrocinador>
+    <referencias>
+        <referencia>https://www.motogp.com/es</referencia>
+        <referencia>https://es.wikipedia.org/wiki/Circuito_de_Jerez</referencia>
+        <referencia>https://circuitodejerez.com/</referencia>
+    </referencias>
+    <fotografias>
+        <fotografia archivo="multimedia/jerezEsquema.jpg">Esquema del circuito</fotografia>
+    </fotografias>
+    <videos>
+        <video archivo="tbd">tbd</video>
+    </videos>
+    <punto-origen>
+        <longitud-origen>6º 01' 56"</longitud-origen>
+        <latitud-origen>36º 42' 34"</latitud-origen>
+        <altitud-origen>39</altitud-origen>
+    </punto-origen>
+    <vencedor>
+        <nombre>Alex Marquez</nombre>
+        <tiempo>00:40:56:374</tiempo>
+    </vencedor>
+    <clasificacion>
+        <nombre>Alex Marquez</nombre>
+        <nombre>Marc Marquez</nombre>
+        <nombre>Pecco Bagnaia</nombre>
+    </clasificacion>
+</circuito>
