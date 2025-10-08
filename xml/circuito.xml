@@ -3,7 +3,7 @@
 
 <circuito>
     <nombre>Jerez-Angel Nieto</nombre>
-    <longitud uds="Kilometros">4,42</longitud>
+    <longitud-pista uds="Kilometros">4,42</longitud-pista>
     <anchura uds="metros">11</anchura>
     <fecha>27 abril</fecha>
     <hora>14:00</hora>
@@ -20,13 +20,26 @@
         <fotografia archivo="multimedia/jerezEsquema.jpg">Esquema del circuito</fotografia>
     </fotografias>
     <videos>
-        <video archivo="tbd">tbd</video>
+        <video archivo="multimedia/jerezVideo.mp4">Video del circuito</video>
     </videos>
     <punto-origen>
         <longitud-origen>6º 01' 56"</longitud-origen>
         <latitud-origen>36º 42' 34"</latitud-origen>
         <altitud-origen>39</altitud-origen>
     </punto-origen>
+
+    <puntos-anonimos>
+        <punto>
+            <distancia uds="metros">328</distancia>
+            <coordenada>
+                <longitud>6 02 02</longitud>
+                <latitud>36 42 44</latitud>
+                <altitud>45</altitud> 
+            </coordenada>
+            <sector>1</sector>
+        </punto>
+    </puntos-anonimos>
+
     <vencedor>
         <nombre>Alex Marquez</nombre>
         <tiempo>00:40:56:374</tiempo>

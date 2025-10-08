@@ -1,11 +1,11 @@
 
-<!ELEMENT circuito (nombre,longitud,anchura,fecha,hora,
+<!ELEMENT circuito (nombre,longitud-pista,anchura,fecha,hora,
 numero-vueltas, localidad, pais, patrocinador,referencias,
- fotografias,fotografias, videos, punto-origen, vencedor,clasificacion)>
+ fotografias, videos, punto-origen,puntos-anonimos, vencedor,clasificacion)>
 <!ELEMENT nombre (#PCDATA)>
 
-<!ELEMENT longitud (#PCDATA)>
-<!ATTLIST longitud uds CDATA #REQUIRED>
+<!ELEMENT longitud-pista (#PCDATA)>
+<!ATTLIST longitud-pista uds CDATA #REQUIRED>
 
 <!ELEMENT anchura (#PCDATA)>
 <!ATTLIST anchura uds CDATA #REQUIRED>
@@ -34,6 +34,14 @@ numero-vueltas, localidad, pais, patrocinador,referencias,
 <!ELEMENT altitud-origen (#PCDATA)>
 
 <!ELEMENT puntos-anonimos (punto+)>
+<!ELEMENT punto (distancia, coordenada, sector)>
+<!ELEMENT distancia (#PCDATA)>
+<!ATTLIST distancia uds CDATA #REQUIRED>
+<!ELEMENT coordenada (longitud, latitud, altitud)>
+<!ELEMENT longitud (#PCDATA)>
+<!ELEMENT latitud (#PCDATA)>
+<!ELEMENT altitud (#PCDATA)>
+<!ELEMENT sector (#PCDATA)>
 
 <!ELEMENT vencedor (nombre, tiempo)>
 <!ELEMENT tiempo (#PCDATA)>
