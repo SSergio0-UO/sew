@@ -28,17 +28,213 @@
         <altitud-origen>39</altitud-origen>
     </punto-origen>
 
-    <puntos-anonimos>
-        <punto>
-            <distancia uds="metros">328</distancia>
-            <coordenada>
-                <longitud>6 02 02</longitud>
-                <latitud>36 42 44</latitud>
-                <altitud>45</altitud> 
-            </coordenada>
-            <sector>1</sector>
-        </punto>
-    </puntos-anonimos>
+<puntos-anonimos>
+    <!-- SECTOR 1 -->
+    <punto>
+        <distancia uds="metros">250</distancia>
+        <coordenada>
+            <longitud>6 02 05</longitud>
+            <latitud>36 42 25</latitud>
+            <altitud>54</altitud>
+        </coordenada>
+        <sector>1</sector>
+    </punto>
+    <punto>
+        <distancia uds="metros">120</distancia>
+        <coordenada>
+            <longitud>6 02 07</longitud>
+            <latitud>36 42 20</latitud>
+            <altitud>53</altitud>
+        </coordenada>
+        <sector>1</sector>
+    </punto>
+    <punto>
+        <distancia uds="metros">180</distancia>
+        <coordenada>
+            <longitud>6 02 10</longitud>
+            <latitud>36 42 22</latitud>
+            <altitud>52</altitud>
+        </coordenada>
+        <sector>1</sector>
+    </punto>
+    <punto>
+        <distancia uds="metros">220</distancia>
+        <coordenada>
+            <longitud>6 02 15</longitud>
+            <latitud>36 42 30</latitud>
+            <altitud>51</altitud>
+        </coordenada>
+        <sector>1</sector>
+    </punto>
+    <punto>
+        <distancia uds="metros">260</distancia>
+        <coordenada>
+            <longitud>6 02 18</longitud>
+            <latitud>36 42 40</latitud>
+            <altitud>50</altitud>
+        </coordenada>
+        <sector>1</sector>
+    </punto>
+    <punto>
+        <distancia uds="metros">210</distancia>
+        <coordenada>
+            <longitud>6 02 12</longitud>
+            <latitud>36 42 50</latitud>
+            <altitud>49</altitud>
+        </coordenada>
+        <sector>1</sector>
+    </punto>
+
+    <!-- SECTOR 2 -->
+    <punto>
+        <distancia uds="metros">180</distancia>
+        <coordenada>
+            <longitud>6 02 00</longitud>
+            <latitud>36 42 55</latitud>
+            <altitud>48</altitud>
+        </coordenada>
+        <sector>2</sector>
+    </punto>
+    <punto>
+        <distancia uds="metros">300</distancia>
+        <coordenada>
+            <longitud>6 01 55</longitud>
+            <latitud>36 43 02</latitud>
+            <altitud>47</altitud>
+        </coordenada>
+        <sector>2</sector>
+    </punto>
+    <punto>
+        <distancia uds="metros">180</distancia>
+        <coordenada>
+            <longitud>6 01 58</longitud>
+            <latitud>36 43 08</latitud>
+            <altitud>46</altitud>
+        </coordenada>
+        <sector>2</sector>
+    </punto>
+    <punto>
+        <distancia uds="metros">140</distancia>
+        <coordenada>
+            <longitud>6 02 05</longitud>
+            <latitud>36 43 05</latitud>
+            <altitud>46</altitud>
+        </coordenada>
+        <sector>2</sector>
+    </punto>
+    <punto>
+        <distancia uds="metros">160</distancia>
+        <coordenada>
+            <longitud>6 02 10</longitud>
+            <latitud>36 43 00</latitud>
+            <altitud>47</altitud>
+        </coordenada>
+        <sector>2</sector>
+    </punto>
+    <punto>
+        <distancia uds="metros">150</distancia>
+        <coordenada>
+            <longitud>6 02 12</longitud>
+            <latitud>36 42 55</latitud>
+            <altitud>48</altitud>
+        </coordenada>
+        <sector>2</sector>
+    </punto>
+
+    <!-- SECTOR 3 -->
+    <punto>
+        <distancia uds="metros">120</distancia>
+        <coordenada>
+            <longitud>6 02 15</longitud>
+            <latitud>36 42 50</latitud>
+            <altitud>49</altitud>
+        </coordenada>
+        <sector>3</sector>
+    </punto>
+    <punto>
+        <distancia uds="metros">130</distancia>
+        <coordenada>
+            <longitud>6 02 20</longitud>
+            <latitud>36 42 47</latitud>
+            <altitud>50</altitud>
+        </coordenada>
+        <sector>3</sector>
+    </punto>
+    <punto>
+        <distancia uds="metros">120</distancia>
+        <coordenada>
+            <longitud>6 02 25</longitud>
+            <latitud>36 42 48</latitud>
+            <altitud>51</altitud>
+        </coordenada>
+        <sector>3</sector>
+    </punto>
+    <punto>
+        <distancia uds="metros">220</distancia>
+        <coordenada>
+            <longitud>6 02 28</longitud>
+            <latitud>36 42 52</latitud>
+            <altitud>52</altitud>
+        </coordenada>
+        <sector>3</sector>
+    </punto>
+    <punto>
+        <distancia uds="metros">240</distancia>
+        <coordenada>
+            <longitud>6 02 25</longitud>
+            <latitud>36 42 58</latitud>
+            <altitud>53</altitud>
+        </coordenada>
+        <sector>3</sector>
+    </punto>
+
+    <!-- SECTOR 4 -->
+    <punto>
+        <distancia uds="metros">140</distancia>
+        <coordenada>
+            <longitud>6 02 20</longitud>
+            <latitud>36 43 00</latitud>
+            <altitud>54</altitud>
+        </coordenada>
+        <sector>4</sector>
+    </punto>
+    <punto>
+        <distancia uds="metros">120</distancia>
+        <coordenada>
+            <longitud>6 02 15</longitud>
+            <latitud>36 42 58</latitud>
+            <altitud>54</altitud>
+        </coordenada>
+        <sector>4</sector>
+    </punto>
+    <punto>
+        <distancia uds="metros">180</distancia>
+        <coordenada>
+            <longitud>6 02 10</longitud>
+            <latitud>36 42 54</latitud>
+            <altitud>55</altitud>
+        </coordenada>
+        <sector>4</sector>
+    </punto>
+    <punto>
+        <distancia uds="metros">330</distancia>
+        <coordenada>
+            <longitud>6 02 06</longitud>
+            <latitud>36 42 45</latitud>
+            <altitud>55</altitud>
+        </coordenada>
+        <sector>4</sector>
+    </punto>
+    <punto>
+        <distancia uds="metros">473</distancia>
+        <coordenada>
+            <longitud>6 02 03</longitud>
+            <latitud>36 42 30</latitud>
+            <altitud>55</altitud>
+        </coordenada>
+        <sector>4</sector>
+    </punto>
+</puntos-anonimos>
 
     <vencedor>
         <nombre>Alex Marquez</nombre>
