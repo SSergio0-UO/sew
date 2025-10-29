@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns="http://www.uniovi.es/circuito" elementFormDefault="qualified"
-	targetNamespace="http://www.uniovi.es/circuito" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns="http://www.uniovi.es" elementFormDefault="qualified"
+	targetNamespace="http://www.uniovi.es" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xs:element name="circuito">
 		<xs:complexType>
 			<xs:sequence>
@@ -99,7 +99,7 @@
 	</xs:element>
 	<xs:element name="longitud-origen">
 		<xs:simpleType>
-			<xs:restriction base="xs:integer">
+			<xs:restriction base="xs:decimal">
 				<xs:minInclusive value="-180"></xs:minInclusive>
 				<xs:maxInclusive value="180"></xs:maxInclusive>
 			</xs:restriction>
@@ -107,7 +107,7 @@
 	</xs:element>
 	<xs:element name="latitud-origen">
 		<xs:simpleType>
-			<xs:restriction base="xs:integer">
+			<xs:restriction base="xs:decimal">
 				<xs:minInclusive value="-90"></xs:minInclusive>
 				<xs:maxInclusive value="90"></xs:maxInclusive>
 			</xs:restriction>
@@ -115,7 +115,7 @@
 	</xs:element>
 	<xs:element name="altitud-origen">
 		<xs:simpleType>
-			<xs:restriction base="xs:integer">
+			<xs:restriction base="xs:decimal">
 				<xs:minInclusive value="0"></xs:minInclusive>
 				<xs:maxInclusive value="5000"></xs:maxInclusive>
 			</xs:restriction>
@@ -155,10 +155,10 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="longitud" type="xs:string" />
-	<xs:element name="latitud" type="xs:string" />
-	<xs:element name="altitud" type="xs:string" />
-	<xs:element name="sector" type="xs:string" />
+	<xs:element name="longitud" type="xs:decimal" />
+	<xs:element name="latitud" type="xs:decimal" />
+	<xs:element name="altitud" type="xs:decimal" />
+	<xs:element name="sector" type="xs:decimal" />
 	<xs:element name="vencedor">
 		<xs:complexType>
 			<xs:sequence>

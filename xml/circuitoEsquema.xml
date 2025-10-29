@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE circuito SYSTEM "circuito.dtd">
+<circuito xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns="http://www.uniovi.es"
+             xsi:schemaLocation="http://www.uniovi.es circuito.xsd">
 
-<circuito>
     <nombre>Jerez-Angel Nieto</nombre>
     <longitud-pista uds="Kilometros">4,42</longitud-pista>
     <anchura uds="metros">11</anchura>
@@ -22,7 +23,10 @@
     <videos>
         <video archivo="multimedia/jerezVideo.mp4">Video del circuito</video>
     </videos>
-      <punto-origen>
+
+
+
+  <punto-origen>
     <longitud-origen>-6.031214</longitud-origen>
     <latitud-origen>36.707242</latitud-origen>
     <altitud-origen>39</altitud-origen>
@@ -134,7 +138,7 @@
       <coordenada>
         <longitud>-6.034161</longitud>
         <latitud>36.708351</latitud>
-        <altitud>0.0</altitud>
+        <altitud>50</altitud>
       </coordenada>
       <sector>2</sector>
     </punto>
