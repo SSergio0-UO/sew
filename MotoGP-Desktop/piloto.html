@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Sergio Seijo Martínez" />
+    <meta name="description" content="Información sobre Alex Marquez" />
+    <meta name="keywords" content="Moto, MotoGP,Alex,piloto" />
+    <meta name="viewport" content="width=device-width, initialscale=1.0" />
+    <title>MotoGP-Piloto</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="icon" href="multimedia/favicon.ico" />
+</head>
+
+<body>
+    <header>
+        <!-- Datos con el contenidos que aparece en el navegador -->
+        <h1><a href="index.html">MotoGP Desktop</a></h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="piloto.html" class="active">Piloto</a>
+            <a href="circuito.html">Circuito</a>
+            <a href="meteorologia.html">Meteorologia</a>
+            <a href="clasificaciones.html">Clasificaciones</a>
+            <a href="juegos.html">Juegos</a>
+            <a href="ayuda.html">Ayuda</a>
+        </nav>
+    </header>
+
+    <p>Estas en: <a href="index.html">Inicio</a> | <strong>Piloto</strong></p>
+
+    <main>
+        <section>
+            <h2>Alex Márquez</h2>
+            <p>
+                Alejandro Márquez Alentà (Cervera, Lérida, 23 de abril de 1996), más conocido como Álex Márquez,
+                es un piloto de motociclismo español que compite en la «categoría reina» de MotoGP con el equipo Gresini
+                Racing,
+                donde obtuvo su primera victoria en el Gran Premio de España de 2025. Previamente compitió con los
+                equipos
+                Repsol Honda en 2020 y LCR Honda en 2021 y 2022.
+                Ha ganado dos títulos del Campeonato del Mundo de Motociclismo (en Moto3 en 2014 y en Moto2 en 2019).
+            </p>
+            <picture>
+                <source media="(max-width: 799px)" srcset="multimedia/alexMarquezTablet.jpg">
+                <source media="(max-width: 465px)" srcset="multimedia/alexMarquezMovil">
+                <source media="(min-width: 800px)" srcset="multimedia/alexMarquezMonitor">
+                <img src="multimedia/alexMarquez.jpg" alt="Fotografia del piloto Alex Marquez" />
+            </picture>
+        </section>
+
+        <section>
+            <h2>Informacion sobre el piloto:</h2>
+            <ul>
+                <li>Fecha de nacimiento: 23-4-1996</li>
+                <li>Lugar de nacimiento: Lérida, España</li>
+                <li>Altura: 1,79m </li>
+                <li>Peso: 64Kg </li>
+                <li>Moto: Ducati </li>
+                <li>Dorsal: 73</li>
+            </ul>
+
+            <video controls>
+                <source src="multimedia/videoPiloto.mp4" type="video/mp4" />
+                <source src="multimedia/videoPiloto.webm" type="video/webm" />
+            </video>
+
+
+            <p>Equipos en los que ha competido el piloto: </p>
+            <ol>
+                <li>Moto GP:
+                    <ul>
+                        <li>Repsol Honda Team</li>
+                        <li>LCR Honda</li>
+                        <li>Gresini Racing</li>
+                    </ul>
+                </li>
+                <li>Moto 2:
+                    <ul>
+                        <li>EG 0,0 Marc VDS</li>
+                    </ul>
+                </li>
+                <li>Moto 3:
+                    <ul>
+                        <li>Estrella Galicia 0,0</li>
+                    </ul>
+                </li>
+            </ol>
+
+
+            <audio controls>
+                <source src="multimedia/audioPiloto.mp3" type="audio/mp3" />
+                <source src="multimedia/audioPiloto.wav" type="audio/wav" />
+            </audio>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col" id="gran_premio">Gran Premio</th>
+                        <th scope="col" id="posicion">Posición de carrera</th>
+                        <th scope="col" id="puntos">Puntos obtenidos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row" id="catar">Catar</td>
+                        <td headers="posicion catar">6.º</td>
+                        <td headers="puntos catar">10</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" id="holanda">Holanda</td>
+                        <td headers="posicion holanda">8.º</td>
+                        <td headers="puntos holanda">8</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" id="alemania">Alemania</td>
+                        <td headers="posicion alemania">3.º</td>
+                        <td headers="puntos alemania">16</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" id="malasia">Malasia</td>
+                        <td headers="posicion malasia">4.º</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td scope="catalunya">Catalunya (GP Solidario)</td>
+                        <td headers="posicion catalunya">4.º</td>
+                        <td headers="putnos catalunya">13</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <aside>
+
+            <dl>
+                <dt>Pista</dt>
+                <dd>Chicane</dd>
+                <dd>Curva</dd>
+                <dd>Recta</dd>
+                <dt>Tecnologia de la moto</dt>
+                <dd>Control de traccion</dd>
+                <dd>Tacometro</dd>
+            </dl>
+        </aside>
+    </main>
+
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1;
+
+}
+
+main h2 {
+    grid-column: 1/valor de la ulima columna;
+}
