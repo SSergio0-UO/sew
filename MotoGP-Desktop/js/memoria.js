@@ -1,6 +1,9 @@
 class Memoria {
 
+    constructor() {
+    }
+
     voltearCarta(carta) {
-        carta.
+        carta.dataset.estado = "volteada";
     }
 }

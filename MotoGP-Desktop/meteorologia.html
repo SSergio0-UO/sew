@@ -31,11 +31,27 @@
         </nav>
     </header>
     <p>Estas en: <a href="index.html">Inicio</a> | <strong>Meteorologia</strong></p>
-    <main>
-        <h2>Meteorologia de Jerez de la Frontera</h2>
-        <p>Nombre de la ciudad: <span id="nombreCiudad"></span></p>
 
-    </main>
+    <script>
+        let jerez = new Ciudad("Jerez de la Frontera", "España", "Jerezano");
+        jerez.rellenar(213688, { lat: 36.685, lng: -6.126 });
+
+        const ciudad = document.createElement("h2");
+        ciudad.textContent = jerez.getNombre();
+        document.body.appendChild(ciudad);
+
+        const pais = document.createElement("h3");
+        pais.textContent = jerez.getPais();
+        document.body.appendChild(pais);
+
+        const infoSecundaria = document.createElement("ul");
+        infoSecundaria.innerHTML = jerez.obtenerInfoSecundaria();
+        document.body.appendChild(infoSecundaria);
+
+        jerez.coordenadasPunto();
+    </script>
+
+
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 class Ciudad {
-    constructor(nombre, pais, gentilicio, poblacion, coordenadas) {
+    constructor(nombre, pais, gentilicio) {
         this.nombre = nombre;
         this.pais = pais;
         this.gentilicio = gentilicio;
@@ -13,20 +13,19 @@ class Ciudad {
     }
 
 
-    nombre() {
+    getNombre() {
         return this.nombre;
     }
 
-    pais() {
+    getPais() {
         return this.pais;
     }
 
     obtenerInfoSecundaria() {
         return `
-          <ul>
             <li><strong>Gentilicio:</strong> ${this.gentilicio}</li>
             <li><strong>Población:</strong> ${this.poblacion.toLocaleString()} habitantes</li>
-          </ul>`;
+          `;
     }
 
     coordenadasPunto() {
@@ -35,6 +34,4 @@ class Ciudad {
         document.body.appendChild(msg);
     }
 }
-let jerez = new Ciudad("Jerez de la Frontera", "España", "Jerezano");
-jerez.rellenar(213688, { lat: 36.685, lng: -6.126 });
-document.getElementById("nombreCiudad").textContent = jerez.obtenerNombreCiudad();
+

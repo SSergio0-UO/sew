@@ -9,12 +9,13 @@
     <meta name="description" content="" />
     <meta name="keywords" content="Moto, MotoGP" />
     <meta name="viewport" content="width=device-width, initialscale=1.0" />
-    <title>MotoGP-Juegos</title>
+    <title>MotoGP-Juego de memoria de cartas</title>
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="stylesheet" type="text/css" href="estilo/cards.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout-cards.css" />
     <link rel="icon" href="multimedia/favicon.ico" />
+    <script src="js/memoria.js"></script>
 </head>
 
 <body>
@@ -31,12 +32,64 @@
             <a href="ayuda.html">Ayuda</a>
         </nav>
     </header>
+    <script>
+        let memoria = new Memoria();
+    </script>
     <p>Estas en: <a href="index.html">Inicio</a> | <a href="juegos.html">Juegos</a> | Juego de Memoria</p>
     <main>
         <h2>Juego de Memoria</h2>
         <article onclick="memoria.voltearCarta(this)">
             <h3>Memory card</h3>
-            <img src="source" alt="description" />
+            <img src="multimedia/logos/honda.svg" alt="Logo-Honda" />
+        </article>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory card</h3>
+            <img src="multimedia/logos/honda.svg" alt="Logo-Honda" />
+        </article>
+
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory card</h3>
+            <img src="multimedia/logos/yamaha.svg" alt="Logo-Yamaha" />
+        </article>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory card</h3>
+            <img src="multimedia/logos/yamaha.svg" alt="Logo-Yamaha" />
+        </article>
+
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory card</h3>
+            <img src="multimedia/logos/ducati.svg" alt="Logo-Ducati" />
+        </article>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory card</h3>
+            <img src="multimedia/logos/ducati.svg" alt="Logo-Ducati" />
+        </article>
+
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory card</h3>
+            <img src="multimedia/logos/ktm.svg" alt="Logo-KTM" />
+        </article>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory card</h3>
+            <img src="multimedia/logos/ktm.svg" alt="Logo-KTM" />
+        </article>
+
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory card</h3>
+            <img src="multimedia/logos/aprilia.svg" alt="Logo-Aprilia" />
+        </article>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory card</h3>
+            <img src="multimedia/logos/aprilia.svg" alt="Logo-Aprilia" />
+        </article>
+
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory card</h3>
+            <img src="multimedia/logos/motogp.svg" alt="Logo-MotoGP" />
+        </article>
+        <article onclick="memoria.voltearCarta(this)">
+            <h3>Memory card</h3>
+            <img src="multimedia/logos/motogp.svg" alt="Logo-MotoGP" />
         </article>
     </main>
 </body>
