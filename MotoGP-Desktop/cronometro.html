@@ -8,11 +8,12 @@
     <meta name="author" content="Sergio Seijo Martínez" />
     <meta name="description" content="" />
     <meta name="keywords" content="Moto, MotoGP" />
-    <meta name="viewport" content="width=device-width, initialscale=1.0" />
-    <title>MotoGP-Juegos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MotoGP-Cronometro</title>
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="icon" href="multimedia/favicon.ico" />
+    <script src="js/cronometro.js"></script>
 </head>
 
 <body>
@@ -29,13 +30,13 @@
             <a href="ayuda.html">Ayuda</a>
         </nav>
     </header>
-    <p>Estas en: <a href="index.html">Inicio</a> | <strong>Juegos</strong></p>
+    <p>Estas en: <a href="index.html">Inicio</a> | <a href="juegos.html">Juegos</a> | Cronometro</p>
     <main>
-        <h2>Juegos de MotoGP-Desktop</h2>
-        <ul>
-            <il><a href="memoria.html">Juego de memoria de cartas</a></il>
-            <il><a href="cronometro.html">Cronometro</a></il>
-        </ul>
+        <p>00:00.0</p>
+        <button onclick="cronometro.arrancar()">Arrancar</button>
+        <button onclick="cronometro.parar()">Parar</button>
+        <button onclick="cronometro.reiniciar()">Reiniciar</button>
+        <script> let cronometro = new Cronometro()</script>
     </main>
 </body>
 
