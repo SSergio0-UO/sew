@@ -7,6 +7,9 @@ class Cronometro {
     }
 
     arrancar() {
+
+
+
         try {
             this.inicio = Temporal.Now.instant();
         } catch (err) {
@@ -25,7 +28,10 @@ class Cronometro {
             const ahora = new Date();
             this.tiempo = (ahora - this.inicio) / 1000;
         }
+
         this.mostrar();
+
+
     }
 
     mostrar() {

@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="estilo/layout-cards.css" />
     <link rel="icon" href="multimedia/favicon.ico" />
     <script src="js/memoria.js"></script>
+    <script src="js/cronometro.js"></script>
 </head>
 
 <body>
@@ -32,12 +33,10 @@
             <a href="ayuda.html">Ayuda</a>
         </nav>
     </header>
-    <script>
-        let memoria = new Memoria();
-    </script>
     <p>Estas en: <a href="index.html">Inicio</a> | <a href="juegos.html">Juegos</a> | Juego de Memoria</p>
     <main>
         <h2>Juego de Memoria</h2>
+        <p>00:00.0</p>
         <article onclick="memoria.voltearCarta(this)">
             <h3>Memory card</h3>
             <img src="multimedia/logos/honda.svg" alt="Logo-Honda" />
@@ -91,6 +90,12 @@
             <h3>Memory card</h3>
             <img src="multimedia/logos/motogp.svg" alt="Logo-MotoGP" />
         </article>
+
+
+        <script>
+            let memoria = new Memoria();
+        </script>
+
     </main>
 </body>
 
