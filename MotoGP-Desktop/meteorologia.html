@@ -8,12 +8,17 @@
     <meta name="author" content="Sergio Seijo Martínez" />
     <meta name="description" content="" />
     <meta name="keywords" content="Moto, MotoGP" />
-    <meta name="viewport" content="width=device-width, initialscale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MotoGP-Meteorologia</title>
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <link rel="icon" href="multimedia/favicon.ico" />
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/ciudad.js"></script>
+
+
 </head>
 
 <body>
@@ -32,24 +37,32 @@
     </header>
     <p>Estas en: <a href="index.html">Inicio</a> | <strong>Meteorologia</strong></p>
 
-    <script>
-        let jerez = new Ciudad("Jerez de la Frontera", "España", "Jerezano");
-        jerez.rellenar(213688, { lat: 36.685, lng: -6.126 });
 
-        const ciudad = document.createElement("h2");
-        ciudad.textContent = jerez.getNombre();
-        document.body.appendChild(ciudad);
+    <main>
+        <script>
+            let jerez = new Ciudad("Jerez de la Frontera", "España", "Jerezano");
+            jerez.rellenar(213688, { lat: 36.685, lng: -6.126 });
 
-        const pais = document.createElement("h3");
-        pais.textContent = jerez.getPais();
-        document.body.appendChild(pais);
+            const ciudad = document.createElement("h2");
+            ciudad.textContent = jerez.getNombre();
+            document.body.appendChild(ciudad);
 
-        const infoSecundaria = document.createElement("ul");
-        infoSecundaria.innerHTML = jerez.obtenerInfoSecundaria();
-        document.body.appendChild(infoSecundaria);
+            const pais = document.createElement("h3");
+            pais.textContent = jerez.getPais();
+            document.body.appendChild(pais);
 
-        jerez.coordenadasPunto();
-    </script>
+            const infoSecundaria = document.createElement("ul");
+            infoSecundaria.innerHTML = jerez.obtenerInfoSecundaria();
+            document.body.appendChild(infoSecundaria);
+
+            jerez.coordenadasPunto();
+
+            jerez.getMeteorologiaCarrera();
+            jerez.getMeteorologiaEntrenos();
+        </script>
+
+    </main>
+
 
 
 </body>

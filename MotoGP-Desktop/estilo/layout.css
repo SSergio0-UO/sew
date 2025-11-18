@@ -40,3 +40,11 @@ header nav a {
     }
 
 }
+
+/* Carrusel adaptable */
+@media (max-width: 768px) {
+    article h2+img {
+        width: 100%;
+        height: auto;
+    }
+}
