@@ -48,3 +48,31 @@ header nav a {
         height: auto;
     }
 }
+
+/* Estilo general del mapa dinámico */
+body>div {
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    height: 500px;
+    /* Altura fija para escritorio */
+    margin-top: 10px;
+    /* Separación respecto a elementos anteriores */
+    border: 1px solid #ccc;
+    /* Borde opcional */
+    box-sizing: border-box;
+}
+
+/* Adaptabilidad para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    body>div {
+        height: 300px;
+        /* Reducimos altura en móviles */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body>div {
+        height: 250px;
+        /* Más compacto en pantallas muy pequeñas */
+    }
+}
