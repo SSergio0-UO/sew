@@ -76,7 +76,7 @@ if (isset($_POST['mostrar'])) {
             <a href="piloto.html">Piloto</a>
             <a href="circuito.html">Circuito</a>
             <a href="meteorologia.html">Meteorologia</a>
-            <a href="clasificaciones.html">Clasificaciones</a>
+            <a href="clasificaciones.php">Clasificaciones</a>
             <a href="juegos.html">Juegos</a>
             <a href="ayuda.html">Ayuda</a>
         </nav>
