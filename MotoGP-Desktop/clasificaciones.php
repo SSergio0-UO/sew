@@ -1,14 +1,17 @@
 <?php
-class Clasificaion{
+class Clasificaion
+{
     private $documento;
     private $datos;
 
-    public function __construct(){
-        $this -> $documento = "xml/circuitoEsquema.xml";
+    public function __construct()
+    {
+        $this->documento = "xml/circuitoEsquema.xml";
     }
 
-    public function consultar(){
-        $this-> datos = file_get_contents($this->documento);
+    public function consultar()
+    {
+        $this->datos = file_get_contents($this->documento);
     }
 }
 

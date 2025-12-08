@@ -1,0 +1,29 @@
+-- Tabla usuarios
+CREATE TABLE usuarios (
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    profesion VARCHAR(100),
+    edad INT,
+    genero VARCHAR(20),
+    pericia_informatica VARCHAR(100)
+);
+
+-- Tabla resultados del test
+CREATE TABLE resultados_test (
+    id_resultado INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT NOT NULL,
+    dispositivo ENUM('ordenador', 'tableta', 'telefono') NOT NULL,
+    tiempo INT,
+    completado BOOLEAN,
+    comentarios TEXT,
+    mejoras TEXT,
+    valoracion INT CHECK (valoracion BETWEEN 0 AND 10),
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+);
+
+-- Tabla observaciones del facilitador
+CREATE TABLE observaciones_facilitador (
+    id_observacion INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT NOT NULL,
+    comentario TEXT NOT NULL,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+);

@@ -2,27 +2,37 @@
 
 session_start();
 // --- Clase Cronometro (desde las tareas 3,4,5) ---
-class Cronometro {
+class Cronometro
+{
     private $tiempo;
     private $inicio;
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->tiempo = 0;
     }
 
-    public function arrancar() {
+    public function arrancar()
+    {
         $this->inicio = microtime(true);
     }
 
-    public function parar() {
+    public function parar()
+    {
         $ahora = microtime(true);
         $this->tiempo = $ahora - $this->inicio;
     }
 
-    public function mostrar() {
+    public function mostrar()
+    {
         $min = floor($this->tiempo / 60);
         $seg = $this->tiempo - ($min * 60);
         return sprintf("%02d:%04.1f", $min, $seg);
+    }
+
+    public function getTiempo()
+    {
+        return $this->tiempo;
     }
 }
 
@@ -53,6 +63,7 @@ if (isset($_POST['mostrar'])) {
 ?>
 <!DOCTYPE HTML>
 <html lang="es">
+
 <head>
     <!-- Datos que describen el documento -->
     <meta charset="UTF-8" />
@@ -67,6 +78,7 @@ if (isset($_POST['mostrar'])) {
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/carrusel.js"></script>
 </head>
+
 <body>
     <header>
         <!-- Datos con el contenidos que aparece en el navegador -->
@@ -97,4 +109,5 @@ if (isset($_POST['mostrar'])) {
     </main>
 
 </body>
+
 </html>
