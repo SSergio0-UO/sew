@@ -62,24 +62,45 @@ class Configuracion
         }
     }
 
-    public function exportarDatos($nombreArchivo = 'archivo.csv')
+    public function exportarDatos()
     {
         $db = new mysqli($this->servername, $this->username, $this->password, $this->database);
 
+        // Tabla => Archivo destino
         $tablas = [
-            'usuarios' => "SELECT * FROM usuarios",
-            'resultados_test' => "SELECT * FROM resultados_test",
-            'observaciones_facilitador' => "SELECT * FROM observaciones_facilitador"
+            'usuarios' => [
+                'sql' => "SELECT * FROM usuarios",
+                'archivo' => 'usuarios.csv'
+            ],
+            'resultados_test' => [
+                'sql' => "SELECT * FROM resultados_test",
+                'archivo' => 'resultados.csv'
+            ],
+            'observaciones_facilitador' => [
+                'sql' => "SELECT * FROM observaciones_facilitador",
+                'archivo' => 'observaciones.csv'
+            ]
         ];
 
-        $modo = file_exists($nombreArchivo) ? 'a' : 'w';
-        $file = fopen($nombreArchivo, $modo);
+        foreach ($tablas as $tabla => $data) {
 
-        foreach ($tablas as $tabla => $sql) {
+            $archivo = $data['archivo'];
+            $sql = $data['sql'];
+
+            // Modo: si existe, sobrescribe (w), si quieres append cambia a 'a'
+            $file = fopen($archivo, 'w');
+
+            if (!$file) {
+                echo "No se pudo crear el archivo $archivo\n";
+                continue;
+            }
+
+            // Exportar datos
             $this->exportarTabla($file, $sql, $db);
+
+            fclose($file);
         }
 
-        fclose($file);
         $db->close();
     }
 

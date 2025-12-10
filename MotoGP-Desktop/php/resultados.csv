@@ -1,0 +1,17 @@
+id_resultado,id_usuario,dispositivo,tiempo,completado,comentarios,mejoras,valoracion
+1,1,ordenador,14,1,s,s,10
+2,2,ordenador,14,1,s,s,10
+3,4,ordenador,14,1,s,s,10
+4,5,ordenador,14,1,s,s,10
+5,6,tableta,14,1,s,s,10
+6,7,ordenador,14,1,s,s,10
+7,8,ordenador,7,1,s,s,9
+8,9,ordenador,7,1,s,s,9
+9,10,ordenador,18,1,2,2,1
+10,11,ordenador,18,1,2,2,1
+11,12,ordenador,6,1,2,2,2
+12,13,ordenador,6,1,2,2,2
+13,14,ordenador,7,1,2,2,2
+14,15,ordenador,7,1,2,2,2
+15,16,ordenador,5,1,a,a,2
+16,17,ordenador,5,1,a,a,2
